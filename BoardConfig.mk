@@ -122,6 +122,18 @@ TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
 
+# SHRP Stuff
+SHRP_DEVICE_CODE := andromeda
+SHRP_PATH := device/xiaomi/$(SHRP_DEVICE_CODE)
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_only
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EDL_MODE := 0
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_DARK := true
+
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
